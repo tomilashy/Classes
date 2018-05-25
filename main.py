@@ -1,16 +1,8 @@
-from company import company
+from profile import profile
 
-new= company("Tomi","Olash",50000,"CEO")
+Tomi=profile("Jesutomi",2018,4,"Electrical Engineering",3.0)
 
-def standard_update(employee):
-  employee *= 1.1
-  print(employee)   #prints the price of the new salary(caused by __mul__)
+print(f"Before Gpa:\n{Tomi}")
 
-
-standard_update(new)
-
-print(new.salary)#this shows that the function above does not change the value
-
-new.standard_update_class()#this is a member functionof the class and it changes the value
-
-print(new)#return a sting(__str__)
+Tomi.new_gpa(4.0)
+print(f"AFter Gpa:\n{Tomi}")
